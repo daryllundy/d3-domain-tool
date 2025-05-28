@@ -15,7 +15,7 @@ A CLI-based domain analysis tool that checks domain availability across traditio
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/daryllundy/d3-domain-tool
 cd d3-domain-tool
 
 # Build the application
