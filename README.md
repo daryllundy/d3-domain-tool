@@ -5,9 +5,10 @@ A CLI-based domain analysis tool that checks domain availability across traditio
 ## Features
 
 - ✅ **Domain Availability**: Check availability across traditional DNS (.com, .net, etc.) and blockchain domains (.eth, .crypto, etc.)
+- 🔶 **DOMA Protocol Integration**: Check tokenization status, DeFi usage, and cross-chain presence
 - 🔍 **WHOIS Data**: Retrieve and display comprehensive WHOIS information
 - ⛓️ **Blockchain Support**: ENS and Unstoppable Domains integration
-- 💰 **Domain Valuation**: Intelligent domain value estimation based on multiple factors
+- 💰 **Enhanced Domain Valuation**: Intelligent domain value estimation including DomainFi factors
 - 📦 **Clean Output**: Beautiful CLI formatting with table and JSON output options
 
 ## Installation
@@ -77,9 +78,10 @@ go build -o d3-domain-tool
 The tool provides comprehensive analysis including:
 
 - **Availability Status**: Whether the domain is available or taken
+- **DOMA Protocol Integration**: Tokenization status, token rights, DeFi usage, cross-chain presence
 - **WHOIS Data**: Registration details, expiry dates, name servers
 - **Blockchain Metadata**: Owner addresses, resolver information, crypto addresses
-- **Domain Valuation**: Estimated value with confidence level and reasoning
+- **Domain Valuation**: Estimated value with confidence level and reasoning (enhanced with DomainFi factors)
 - **Valuation Factors**: Length, character quality, brandability, pronounceability
 
 ## Architecture
@@ -91,6 +93,7 @@ The application is built with a modular design:
 - `internal/checker`: DNS availability checking
 - `internal/whois`: WHOIS data retrieval
 - `internal/blockchain`: Blockchain domain resolution
+- `internal/doma`: DOMA Protocol integration and tokenization analysis
 - `internal/valuation`: Domain value estimation engine
 - `internal/output`: Output formatting (table/JSON)
 
